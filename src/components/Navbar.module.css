@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.linkItem {
+  text-decoration: none;
+  margin: 0 2rem;
+  color: #777;
+}
+
+.active {
+  color: #000;
+  text-decoration: underline;
+}
