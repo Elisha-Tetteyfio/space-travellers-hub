@@ -1,16 +1,23 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import MyProfile from './pages/MyProfile';
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <Routes>
-          <Route path="/" />
-          <Route path="/missions" />
-          <Route path="/my_profile" />
-        </Routes>
+        <Switch>
+          <Route path="/" exact>
+            {/* <MyProfile /> */}
+          </Route>
+          <Route path="/missions" exact>
+            {/* <MyProfile /> */}
+          </Route>
+          <Route path="/my_profile" exact>
+            <MyProfile />
+          </Route>
+        </Switch>
       </div>
     </>
   );

@@ -1,17 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images/planet.png';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   return (
     <nav>
-      <img src={logo} alt="spaceX logo" />
-      <ul>
+      <img src={logo} alt="spaceX logo" className={styles.logo} />
+      <ul className={styles.links}>
         <li>
-          <Link to="/">Rockets</Link>
+          <NavLink to="/" exact className={styles.linkItem} activeClassName={styles.active}>Rockets</NavLink>
         </li>
-        <li><Link to="/missions">Missions</Link></li>
-        <li><Link to="/my_profile">My profile</Link></li>
+        <li>
+          <NavLink to="/missions" exact className={styles.linkItem} activeClassName={styles.active}>Missions</NavLink>
+        </li>
+        <li>
+          <NavLink to="/my_profile" exact className={styles.linkItem} activeClassName={styles.active}>My profile</NavLink>
+        </li>
       </ul>
     </nav>
   );
