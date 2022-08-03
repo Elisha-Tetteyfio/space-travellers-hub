@@ -1,0 +1,10 @@
+.allInfo {
+  display: flex;
+  align-items: stretch;
+  gap: 0.7%;
+  margin-bottom: 4%;
+}
+
+.img {
+  width: 15%;
+}
