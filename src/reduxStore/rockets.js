@@ -18,7 +18,7 @@ export const getAllRocketsAsync = createAsyncThunk(
 
 const rocketSlice = createSlice({
   name: 'rockets',
-  initialState: [{ name: 'mobutu', age: 23, occupation: 'servant' }],
+  initialState: [],
   reducers: {
     addRocket: (state) => {
       const rock1 = { name: 'abuju', age: 33, occupation: 'servant' };
@@ -41,6 +41,9 @@ const rocketSlice = createSlice({
         return item;
       });
       return selectedRocket;
+    },
+    reservedProfile1: (state) => {
+      state.filter((item) => item.reserved === true);
     },
   },
   extraReducers: {
