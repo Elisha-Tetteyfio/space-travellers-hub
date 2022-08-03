@@ -16,6 +16,8 @@ function RocketList() {
           Ximg={item.picha}
           title={item.name}
           maneno={item.des}
+          id={item.id}
+          reservation={item.reserved}
           key={Math.random() * 100}
         />
       ))}

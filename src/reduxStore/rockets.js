@@ -24,11 +24,29 @@ const rocketSlice = createSlice({
       const rock1 = { name: 'abuju', age: 33, occupation: 'servant' };
       return [...state, rock1];
     },
+    makeReservation: (state, action) => {
+      const selectedRocket = state.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, reserved: true };
+        }
+        return item;
+      });
+      return selectedRocket;
+    },
+    cancelReservation: (state, action) => {
+      const selectedRocket = state.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, reserved: false };
+        }
+        return item;
+      });
+      return selectedRocket;
+    },
   },
   extraReducers: {
     [getAllRocketsAsync.fulfilled]: (state, action) => action.payload,
   },
 });
 
-export const { addRocket } = rocketSlice.actions;
+export const { addRocket, makeReservation, cancelReservation } = rocketSlice.actions;
 export default rocketSlice.reducer;
