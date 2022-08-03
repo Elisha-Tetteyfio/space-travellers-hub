@@ -8,8 +8,8 @@ export const getMissions = createAsyncThunk(GET_DATA, async () => {
   const res = await response.json();
   const all = res.map((item) => (
     {
-      mission_name: item.mission_name,
-      mission_id: item.mission_id,
+      name: item.mission_name,
+      id: item.mission_id,
       description: item.description,
     }
   ));

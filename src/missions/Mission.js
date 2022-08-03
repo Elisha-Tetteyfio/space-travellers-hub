@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Mission({ missionName, missionId, description }) {
+/* eslint-disable react/prop-types */
+function Mission({ name, id, description }) {
   return (
-    <li key={missionId}>
-      <div>{missionName}</div>
+    <li id={id}>
+      <div>{name}</div>
       <div>{description}</div>
       <div><button type="button">Status</button></div>
       <div><button type="button">Join Mission</button></div>
