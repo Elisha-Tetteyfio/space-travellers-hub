@@ -37,7 +37,12 @@ Rocket.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   Ximg: PropTypes.array.isRequired,
   id: PropTypes.number.isRequired,
-  reservation: PropTypes.bool.isRequired,
+  reservation: PropTypes.bool,
+};
+
+Rocket.defaultProps = {
+  reservation: false,
+
 };
 
 export default Rocket;
