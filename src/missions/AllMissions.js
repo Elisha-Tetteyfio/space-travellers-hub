@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { getMissions } from '../reduxStore/missions';
 import Mission from './Mission';
 import styles from './AllMissions.module.css';
 
 const AllMissions = () => {
-  const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
 
   return (
     <>
