@@ -1,0 +1,17 @@
+th,
+td,
+table {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: auto;
+}
+
+.missionRow,
+.statusRow,
+.lastRow {
+  width: 10%;
+}
