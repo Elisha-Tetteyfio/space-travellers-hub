@@ -5,7 +5,7 @@ import { getMissions } from '../reduxStore/missions';
 import Mission from './Mission';
 import styles from './AllMissions.module.css';
 
-function AllMissions() {
+const AllMissions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
   useEffect(() => {
@@ -34,6 +34,6 @@ function AllMissions() {
       </table>
     </>
   );
-}
+};
 
 export default AllMissions;
