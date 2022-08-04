@@ -28,6 +28,7 @@ const AllMissions = () => {
               id={item.id}
               name={item.name}
               description={item.description}
+              reserved={item.reserved}
             />
           ))}
         </tbody>

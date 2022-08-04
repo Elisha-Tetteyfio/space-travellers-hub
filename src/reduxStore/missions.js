@@ -18,7 +18,9 @@ export const getMissions = createAsyncThunk(GET_DATA, async () => {
 
 const missionsSlice = createSlice({
   name: 'missions',
-  initialState: [{ mission_name: 'Rocket1', mission_id: 1, description: 'Lorem' }],
+  initialState: [{
+    mission_name: 'Rocket1', mission_id: 1, description: 'Lorem', reserved: false,
+  }],
   reducers: {
     joinMission: (state, action) => {
       const newState = state.map((mission) => {
@@ -27,7 +29,6 @@ const missionsSlice = createSlice({
         }
         return { ...mission, reserved: true };
       });
-      console.log(newState);
       return newState;
     },
     leaveMission: (state, action) => {
@@ -37,7 +38,6 @@ const missionsSlice = createSlice({
         }
         return { ...mission, reserved: false };
       });
-      console.log(newState);
       return newState;
     },
   },
