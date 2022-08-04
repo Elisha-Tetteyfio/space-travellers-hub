@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import RocketsProfile from '../RocketSection/RocketsProfile';
+import styles from '../RocketSection/Rocket.module.css';
 // import reservedProfile1 from '../reduxStore/rockets';
 
 function MyProfile() {
@@ -9,9 +10,9 @@ function MyProfile() {
 
   return (
     <div>
-      <div className="Reserved">
-        <h4>My Rockets</h4>
-        <ul>
+      <div className={styles.Reserved}>
+        <h2 className={styles.Hp}>My Rockets</h2>
+        <ul className={styles.unordered}>
           {selectedOnes.map((item) => (
             <RocketsProfile
               name={item.name}
