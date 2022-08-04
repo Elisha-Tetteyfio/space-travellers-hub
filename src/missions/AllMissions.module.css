@@ -1,3 +1,7 @@
+* {
+  color: #444;
+}
+
 th,
 td,
 table {
@@ -7,7 +11,7 @@ table {
 table {
   border-collapse: collapse;
   width: 95%;
-  margin: auto;
+  margin: 3rem auto;
 }
 
 .missionRow,

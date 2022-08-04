@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux/es/exports';
 import { joinMission, leaveMission } from '../reduxStore/missions';
+import styles from './Mission.module.css';
 
 /* eslint-disable react/prop-types */
 const Mission = (mission) => {
@@ -19,15 +20,15 @@ const Mission = (mission) => {
 
   return (
     <tr id={id}>
-      <td>{name}</td>
+      <th>{name}</th>
       <td>{description}</td>
       <td>
-        {reserved && <p type="button">Active Member</p>}
-        {!reserved && <p type="button">NOT A MEMBER</p>}
+        {reserved && <p className={styles.member}>Active Member</p>}
+        {!reserved && <p className={styles.notMember}>NOT A MEMBER</p>}
       </td>
       <td>
-        {reserved && <button type="button" onClick={leave}>Leave Mission</button>}
-        {!reserved && <button type="button" onClick={join}>Join Mission</button>}
+        {reserved && <div><button type="button" onClick={leave} className={styles.leaveBtn}>Leave Mission</button></div>}
+        {!reserved && <div><button type="button" onClick={join} className={styles.joinBtn}>Join Mission</button></div>}
       </td>
     </tr>
   );
