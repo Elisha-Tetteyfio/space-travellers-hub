@@ -1,0 +1,36 @@
+.notMember {
+  background-color: #777;
+  color: #fff;
+  border-radius: 5px;
+  width: 97%;
+  margin: auto;
+  text-align: center;
+}
+
+.member {
+  background-color: #0275d8;
+  color: #fff;
+  border-radius: 5px;
+  width: 97%;
+  margin: auto;
+  text-align: center;
+}
+
+td > div {
+  text-align: center;
+}
+
+.leaveBtn {
+  color: #f00;
+  border: #f00 solid 1px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.joinBtn {
+  border: solid 1px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 2rem;
+}
