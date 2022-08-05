@@ -28,8 +28,26 @@ const MyProfile = () => {
             </tbody>
           </table>
         </div>
-        {/* Rockets div */}
-        <div>
+        <div className={styles.segment}>
+          <h2>My Rockets</h2>
+          <table>
+            <tbody>
+              {selectedOnes.map((mission) => (
+                <tr key={uuidv4()}>
+                  <td>
+                    <RocketsProfile
+                      name={mission.name}
+                      reserved={mission.reserved}
+                    />
+                    {' '}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* <div>
           <div className={styles.Reserved}>
             <h2 className={styles.Hp}>My Rockets</h2>
             <ul className={styles.unordered}>
@@ -42,7 +60,7 @@ const MyProfile = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* <div>
         <div className={styles.Reserved}>
           <h2 className={styles.Hp}>My Rockets</h2>

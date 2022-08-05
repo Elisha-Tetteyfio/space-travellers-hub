@@ -18,18 +18,7 @@
 .listItem {
   list-style: none;
   padding: 1%;
-  border: 1px solid grey;
-  border-top: 0.1px solid grey;
-  border-bottom: 0.1px solid grey;
 }
-
-/* .unordered {
-  border: 1px solid grey;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin-left: 6%;
-} */
 
 .Hp {
   padding-left: 6%;

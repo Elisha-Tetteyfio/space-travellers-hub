@@ -11,7 +11,8 @@ import { getAllRocketsAsync } from './reduxStore/rockets';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions(), getAllRocketsAsync());
+    dispatch(getMissions());
+    dispatch(getAllRocketsAsync());
   }, [dispatch]);
 
   return (

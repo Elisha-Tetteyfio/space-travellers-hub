@@ -9,6 +9,7 @@
 
 td {
   height: 4rem;
+  padding: 1%;
 }
 
 .Hp {
@@ -18,4 +19,8 @@ td {
 
 .Reserved {
   width: 40%;
+}
+
+.listItem {
+  border: none;
 }
