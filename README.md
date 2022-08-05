@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Traveller's Hub
 
-> Description the project.
+> A React application displaying missions and rockets from Spacex API
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Redux
+- JavaScript
+- CSS
 
 ## Live Demo (if available)
 
@@ -18,55 +19,44 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- JavaScript, React and Redux
 
 ### Setup
-
-### Install
-
-### Usage
+- In your terminal, run `git clone https://github.com/Elisha-Tetteyfio/space-travellers-hub.git`
+- Switch to the project's directory
+- Run `npm install`
+- Run `npm start` to see the project.
 
 ### Run tests
-
-### Deployment
-
+To test, run `npm test`
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Elisha-Tetteyfio](https://github.com/Elisha-Tetteyfio)
+- Twitter: [Elisha](https://twitter.com/Nii_AlYasa)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/elisha-tetteyfio)
 
-👤 **Author2**
+👤 **Adoyo Alphonce**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@tingamapuro04](https://github.com/tingamapuro04)
+- Twitter: [@alphonce_mobutu](https://twitter.com/alphonce_mobutu)
+- LinkedIn: LinkedIn: [LinkedIn](https://www.linkedin.com/in/adoyo-alphonce-3362a4173/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Elisha-Tetteyfio/space-travellers-hub/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
