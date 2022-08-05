@@ -46,34 +46,6 @@ const MyProfile = () => {
             </tbody>
           </table>
         </div>
-
-        {/* <div>
-          <div className={styles.Reserved}>
-            <h2 className={styles.Hp}>My Rockets</h2>
-            <ul className={styles.unordered}>
-              {selectedOnes.map((item) => (
-                <RocketsProfile
-                  name={item.name}
-                  reserved={item.reserved}
-                  key={Math.random() * 1000}
-                />
-              ))}
-            </ul>
-          </div>
-        </div> */}
-        {/* <div>
-        <div className={styles.Reserved}>
-          <h2 className={styles.Hp}>My Rockets</h2>
-          <ul className={styles.unordered}>
-            {selectedOnes.map((item) => (
-              <RocketsProfile
-                name={item.name}
-                reserved={item.reserved}
-                key={Math.random() * 1000}
-              />
-            ))}
-          </ul>
-        </div> */}
       </div>
     </>
   );
