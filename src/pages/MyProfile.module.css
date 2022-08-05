@@ -9,4 +9,18 @@
 
 td {
   height: 4rem;
+  padding: 1%;
+}
+
+.Hp {
+  padding-left: 6%;
+  color: rgb(73, 66, 66);
+}
+
+.Reserved {
+  width: 40%;
+}
+
+.listItem {
+  border: none;
 }

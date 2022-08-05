@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -21,10 +22,9 @@ function Rocket({
     <li className={styles.allInfo}>
       <img src={Ximg} alt="Rocket img" className={styles.img} />
       <div className={styles.rocketInfo}>
-        <h6>{title}</h6>
-        {reservation ? <p>Reserved</p> : null }
-        <p>{maneno}</p>
-        {reservation ? <button onClick={cancel} type="button">Cancel Reservation</button> : <button onClick={update} type="button">Make Reservation</button>}
+        <h2 className={styles.rocketTitle}>{title}</h2>
+        <p>{reservation ? <p className={styles.Badge}>Reserved</p> : null } {maneno}</p>
+        {reservation ? <button className={styles.cancel} onClick={cancel} type="button">Cancel Reservation</button> : <button className={styles.make} onClick={update} type="button">Reserve Rocket</button>}
       </div>
     </li>
   );
@@ -32,12 +32,16 @@ function Rocket({
 
 Rocket.propTypes = {
   title: PropTypes.string.isRequired,
-  // eslint-disable-next-line react/require-default-props
   maneno: PropTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
   Ximg: PropTypes.array.isRequired,
   id: PropTypes.number.isRequired,
-  reservation: PropTypes.bool.isRequired,
+  reservation: PropTypes.bool,
+};
+
+Rocket.defaultProps = {
+  reservation: false,
+  maneno: 'Space X',
 };
 
 export default Rocket;

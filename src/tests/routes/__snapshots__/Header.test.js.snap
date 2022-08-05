@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the navigation Navigation 1`] = `
+<nav>
+  <img
+    alt="spaceX logo"
+    className="logo"
+    src="planet.png"
+  />
+  <ul
+    className="links"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="linkItem active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="linkItem"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        className="linkItem"
+        href="/my_profile"
+        onClick={[Function]}
+      >
+        My profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
