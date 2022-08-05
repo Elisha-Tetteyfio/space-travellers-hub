@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.linkItem {
+  text-decoration: none;
+  margin: 0 2rem;
+  color: #0275d8;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.imgDiv {
+  display: flex;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.imgDiv > img {
+  margin-right: 1rem;
+}
+
+.missionLink {
+  border-right: 1px solid #000;
+}

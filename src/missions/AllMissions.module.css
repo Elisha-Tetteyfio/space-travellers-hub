@@ -1,0 +1,21 @@
+* {
+  color: #444;
+}
+
+th,
+td,
+table {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 3rem auto;
+}
+
+.missionRow,
+.statusRow,
+.lastRow {
+  width: 10%;
+}
