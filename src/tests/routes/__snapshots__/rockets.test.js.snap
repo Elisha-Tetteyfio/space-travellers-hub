@@ -16,6 +16,7 @@ exports[`Testing the rocket component Rocket component 1`] = `
     />
     <p>
        
+      Space X
     </p>
     <button
       className="make"

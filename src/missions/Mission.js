@@ -1,9 +1,8 @@
 import React from 'react';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../reduxStore/missions';
 import styles from './Mission.module.css';
 
-/* eslint-disable react/prop-types */
 const Mission = (mission) => {
   const {
     name, id, description, reserved,
