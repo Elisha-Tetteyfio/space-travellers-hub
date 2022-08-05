@@ -17,8 +17,9 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{ padding: '5px' }}>
         <Navbar />
+        <hr />
         <Switch>
           <Route path="/" exact>
             <RocketsPage />
