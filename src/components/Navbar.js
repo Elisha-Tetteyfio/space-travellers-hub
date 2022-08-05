@@ -6,12 +6,15 @@ import styles from './Navbar.module.css';
 function Navbar() {
   return (
     <nav>
-      <img src={logo} alt="spaceX logo" className={styles.logo} />
+      <div className={styles.imgDiv}>
+        <img src={logo} alt="spaceX logo" className={styles.logo} />
+        <h1>Space Traveller&apos;s Hub</h1>
+      </div>
       <ul className={styles.links}>
         <li>
           <NavLink to="/" exact className={styles.linkItem} activeClassName={styles.active}>Rockets</NavLink>
         </li>
-        <li>
+        <li className={styles.missionLink}>
           <NavLink to="/missions" exact className={styles.linkItem} activeClassName={styles.active}>Missions</NavLink>
         </li>
         <li>
