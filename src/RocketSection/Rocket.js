@@ -32,7 +32,6 @@ function Rocket({
 
 Rocket.propTypes = {
   title: PropTypes.string.isRequired,
-  // eslint-disable-next-line react/require-default-props
   maneno: PropTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
   Ximg: PropTypes.array.isRequired,
@@ -42,7 +41,7 @@ Rocket.propTypes = {
 
 Rocket.defaultProps = {
   reservation: false,
-
+  maneno: 'Space X',
 };
 
 export default Rocket;

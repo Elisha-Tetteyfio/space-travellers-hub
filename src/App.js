@@ -6,11 +6,12 @@ import Missions from './pages/Missions';
 import MyProfile from './pages/MyProfile';
 import RocketsPage from './pages/Rockets';
 import { getMissions } from './reduxStore/missions';
+import { getAllRocketsAsync } from './reduxStore/rockets';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    dispatch(getMissions(), getAllRocketsAsync());
   }, [dispatch]);
 
   return (
