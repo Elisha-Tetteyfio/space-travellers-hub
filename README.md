@@ -12,9 +12,9 @@
 - JavaScript
 - CSS
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Not available]()
 
 
 ## Getting Started
